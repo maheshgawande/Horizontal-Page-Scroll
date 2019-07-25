@@ -1,5 +1,6 @@
 # Horizontal-Page-Scroll
-  When you scroll down, instead of scrolling page vertically it scrolls horizontally. 
+  When you scroll down, instead of scrolling page vertically it scrolls horizontally.
+  Also has functional arrows to use instead of scrolling.
 
 # Reference Link
   https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial/
