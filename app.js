@@ -5,7 +5,7 @@ const outer_wrapper = document.getElementById('outer-wrapper');
 const wrapper = document.getElementById('wrapper');
 
 const initial_doc_width = document.documentElement.scrollWidth;
-let scrollable = wrapper.scrollWidth - document.documentElement.scrollWidth;
+//let scrollable = wrapper.scrollWidth - document.documentElement.scrollWidth;
 let scrolled = 0;
 
 outer_wrapper.addEventListener('scroll', () => {
