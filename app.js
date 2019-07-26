@@ -1,30 +1,34 @@
 const img = document.querySelectorAll('img');
-const left_arrow = document.getElementById('left-arrow');
-const right_arrow = document.getElementById('right-arrow')
+const left_click = document.getElementById('left-click');
+const right_click = document.getElementById('right-click')
 const outer_wrapper = document.getElementById('outer-wrapper');
 const wrapper = document.getElementById('wrapper');
 
-const initial_doc_width = document.documentElement.scrollWidth;
-//let scrollable = wrapper.scrollWidth - document.documentElement.scrollWidth;
+// let scrollable = wrapper.scrollWidth - document.documentElement.scrollWidth;
+let initial_doc_width = document.documentElement.scrollWidth;
 let scrolled = 0;
 
+window.addEventListener('resize', () => {
+    initial_doc_width = document.documentElement.scrollWidth;
+});
+
 outer_wrapper.addEventListener('scroll', () => {
-    scrolled = outer_wrapper.scrollTop;
+    scrolled = Math.ceil(outer_wrapper.scrollTop);
     if (scrolled == 0) {
         img[0].style.opacity = '.5';
-        left_arrow.style.pointerEvents = 'none';
+        left_click.style.pointerEvents = 'none';
     } else if (scrolled > 0 && scrolled < initial_doc_width * 3) {
         img[0].style.opacity = '1';
-        left_arrow.style.pointerEvents = 'all';
+        left_click.style.pointerEvents = 'all';
         img[1].style.opacity = '1';
-        right_arrow.style.pointerEvents = 'all';
+        right_click.style.pointerEvents = 'all';
     } else if (scrolled > 0 && scrolled == initial_doc_width *3 ) {
         img[1].style.opacity = '.5';
-        right_arrow.style.pointerEvents = 'none';
+        right_click.style.pointerEvents = 'none';
     }
 });
 
-left_arrow.addEventListener('click', () => {
+left_click.addEventListener('click', () => {
     if (scrolled > 0 && scrolled <= initial_doc_width) {
         outer_wrapper.scrollTo(0, 0);
     } else if (scrolled > initial_doc_width && scrolled <= initial_doc_width * 2) {
@@ -37,7 +41,7 @@ left_arrow.addEventListener('click', () => {
         console.log('error!');
     }
 });
-right_arrow.addEventListener('click', () => {
+right_click.addEventListener('click', () => {
     if (scrolled >= 0 && scrolled < initial_doc_width) {
         outer_wrapper.scrollTo(0, initial_doc_width)
     } else if (scrolled >= initial_doc_width && scrolled < initial_doc_width * 2) {
