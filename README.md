@@ -6,4 +6,8 @@
   https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial/
 
 # Screenshot
+#1
 ![alt text](https://github.com/maheshgawande/screenshots/blob/master/horizontalPageScroll/horizontalPageScoll(ss-1).png)
+
+#2
+![alt text](https://github.com/maheshgawande/screenshots/blob/master/horizontalPageScroll/horizontalPageScoll(ss-2).png)
