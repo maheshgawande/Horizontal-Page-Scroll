@@ -3,10 +3,10 @@
   Also has functional arrows to use instead of scrolling.
 
 # Screenshots
-  # 1
+  - Screenshot 1
   ![Horizontal-Page-Scrolling-Screenshot-1](https://github.com/maheshgawande/screenshots/blob/master/horizontalPageScroll/horizontalPageScoll(ss-1).png)
 
-  # 2
+  - Screenshot 2
   ![Horizontal-Page-Scrolling-Screenshot-1](https://github.com/maheshgawande/screenshots/blob/master/horizontalPageScroll/horizontalPageScoll(ss-2).png)
 
 
